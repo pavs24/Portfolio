@@ -1,0 +1,75 @@
+:root {
+  --page-bg: #f7efe6;
+  --page-bg-soft: #fff8ef;
+  --heading-color: #3b2316;
+  --muted: #6f5446;
+  --accent: #a94827;
+  --font-body: 'Trebuchet MS', Verdana, sans-serif;
+  --font-display: Georgia, 'Times New Roman', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 204, 153, 0.45), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(169, 72, 39, 0.18), transparent 24%),
+    linear-gradient(180deg, #f7efe6 0%, #f9f4ee 42%, #fffaf4 100%);
+  color: var(--heading-color);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+a {
+  transition: color 180ms ease;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading-color);
+  font-family: var(--font-display);
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: clamp(3.4rem, 8vw, 6.4rem);
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  letter-spacing: -0.04em;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1rem;
+}
